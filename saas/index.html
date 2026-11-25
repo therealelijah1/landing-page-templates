@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{product_name}} | {{tagline}}</title>
+  <link rel="stylesheet" href="../shared/base.css" />
+</head>
+<body>
+  <section class="hero">
+    <h1>{{headline}}</h1>
+    <p class="lead">{{subheadline}}</p>
+    <div class="actions">
+      <a class="btn" href="{{signup_url}}">Start free trial</a>
+      <a class="btn btn-ghost" href="#features">See how it works</a>
+    </div>
+    <p class="note">No credit card required</p>
+  </section>
+
+  <section class="logos" aria-label="Trusted by">{{customer_logos}}</section>
+
+  <section id="features" class="features">
+    <article><h3>{{feature_1_title}}</h3><p>{{feature_1_body}}</p></article>
+    <article><h3>{{feature_2_title}}</h3><p>{{feature_2_body}}</p></article>
+    <article><h3>{{feature_3_title}}</h3><p>{{feature_3_body}}</p></article>
+  </section>
+
+  <section class="cta">
+    <h2>{{closing_headline}}</h2>
+    <a class="btn" href="{{signup_url}}">Get started</a>
+  </section>
+</body>
+</html>

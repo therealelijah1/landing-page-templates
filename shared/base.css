@@ -1,0 +1,13 @@
+:root { --ink: #111; --muted: #666; --accent: #2f5bff; --bg: #fff; --radius: 10px; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
+.hero { text-align: center; }
+.hero h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 auto 16px; max-width: 16ch; }
+.lead { font-size: 20px; color: var(--muted); max-width: 56ch; margin: 0 auto 28px; }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn { background: var(--accent); color: #fff; padding: 14px 22px; border-radius: var(--radius); text-decoration: none; font-weight: 600; }
+.btn-ghost { background: transparent; color: var(--ink); border: 1px solid #ddd; }
+.note { font-size: 14px; color: var(--muted); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.cta { text-align: center; background: #f5f6ff; border-radius: 20px; }

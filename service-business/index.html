@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{business_name}} | {{city}}</title>
+  <link rel="stylesheet" href="../shared/base.css" />
+</head>
+<body>
+  <section class="hero">
+    <h1>{{service}} in {{city}}, done right the first time.</h1>
+    <p class="lead">{{years}} years of experience, {{review_count}} five-star reviews, and a clear quote before we start.</p>
+    <div class="actions">
+      <a class="btn" href="tel:{{phone}}">Call {{phone}}</a>
+      <a class="btn btn-ghost" href="#quote">Get a free quote</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <article><h3>Transparent pricing</h3><p>Fixed quotes, no surprise fees.</p></article>
+    <article><h3>On time</h3><p>We arrive in the window we promise.</p></article>
+    <article><h3>Guaranteed</h3><p>{{guarantee}}</p></article>
+  </section>
+
+  <section id="quote" class="cta">
+    <h2>Request a quote</h2>
+    <form action="{{form_endpoint}}" method="post">
+      <input name="name" placeholder="Name" required />
+      <input name="phone" placeholder="Phone" required />
+      <textarea name="details" placeholder="What do you need?"></textarea>
+      <button class="btn" type="submit">Send request</button>
+    </form>
+  </section>
+</body>
+</html>
